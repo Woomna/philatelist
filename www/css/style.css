@@ -1,0 +1,1624 @@
+
+
+#block-body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+#block-top{
+  width: 100%;
+  height: auto;   
+  margin: 0 auto;
+
+}
+
+#all {
+   margin: 0 auto;
+    width: 1000px;
+    height: auto;
+   background-color: white; 
+}
+
+#block-foot{
+   width: 100%;
+    height: auto;
+    margin: 0 auto;
+   clear:both;
+   margin-bottom: 30px;
+
+   
+    
+}
+
+#block-header {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #6ed3cf;
+}
+
+
+.clear-cart {
+   background-color:transparent; 
+   margin-top: 200px;
+}
+
+#block-left{
+   font: bolder 10px Tahoma;
+   width: 100%;
+   height: 100px;
+   margin-top: 0px;
+   background: #9068be;
+   text-align: center;
+   color: white;
+     
+ 
+}
+
+#block-left select option {
+  font: bolder 10px Tahoma;
+  width: 100px;
+}
+
+
+#button-sel {
+    color: #9068be;
+     font: bolder 10px Tahoma;
+    width: 90px;
+    height: 30px;
+    background: white;
+    border: 2px solid #e1e8f0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#block-content {
+       width: 250px;
+
+   width: 800px;
+   height: auto; 
+   float: right;
+   margin-right: 230px;
+   
+   
+   
+} 
+
+
+#block-footer {
+    
+   border-top:2px solid #c7ccd3;
+   width: 100%;
+   height: 50px;
+   background-color: transparent;
+   margin: 0 auto;
+   clear:both;
+   
+} 
+
+#header-middle-block {
+    padding-bottom: 30px;
+    margin: 0 auto;
+   width: 100%;
+   height: auto;
+   background: url('/images/mister.png') no-repeat center center;
+    background-size: cover;
+    margin-top: 40px;
+    
+   
+} 
+
+#header-menu-block {
+    background: rgba(255,255,255,0.5);
+   width: 92%;
+   height: 60px;
+   margin: 0 auto;
+   padding-left: 125px; }
+
+
+   
+
+#header-menu-button li{
+    
+    font:  12px 'Lucida Sans Unicode';
+    padding-left: 70px;
+    padding-right: 1px;
+    list-style-type: none;
+    
+    
+     
+    
+    
+}
+
+#header-menu-button a{
+    font:  12px 'Lucida Sans Unicode';
+    color: #787878;
+    text-decoration: none;
+    
+    
+
+    
+    
+}
+
+#header-menu-button a:hover{
+    color: #ffffff;
+    
+    
+}
+
+
+
+
+.menu {
+    margin-top: 3%;
+    margin-left: 2%;
+    font:12px Tahoma;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: white;
+    vertical-align:bottom;
+    float: left;
+    transition: 0.2s;
+
+
+}
+
+.menu:hover {
+      
+      padding: 4px;
+      border:2px solid white;
+      border-radius: 2px;
+      font:bold 12px Tahoma;
+      transition: 0.2s;
+      
+}
+
+   .das {
+       margin-top: 20px;
+          border-bottom: 2px dotted #cfcccb;
+          width: 100%;
+          height: 4px;
+   }
+
+#naz {
+    margin-top: 30px;
+    margin-left: 25%;
+     font:bolder 18px Tahoma;
+     letter-spacing: 1px;
+     color:white;
+     text-transform: uppercase;
+    
+}
+
+#img-logo {
+    margin-left: 3%;
+    margin-top: 27px;
+    width: 80px;
+      
+}
+
+#img-log {
+    margin-left: 10%;
+    float:left;
+    margin-top: 15px;
+    width: 60px;
+    padding-bottom: 25px;
+      
+}
+
+#block-basket {
+    font:bold 11px 'Lucida Sans Unicode';
+    color: #ffffff;
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 80px;
+    background:url('/images/basket.png') no-repeat center center;
+     cursor: pointer;
+    
+}
+
+
+
+
+
+#block-category {
+    width: 250px;
+    height: auto;
+    outline: none;
+    font:12px 'Lucida Sans Unicode';
+    color: grey;
+/*    margin-top: 100px;*/
+    
+    
+}
+.header-title {
+    text-align: center;
+    width: 240px;
+    font:bold 12px 'Lucida Sans Unicode';
+    color: #0f0f0f; 
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    
+  
+}
+
+li {
+list-style-type: none; 
+}
+
+.header-title:hover {
+     font:bold 12px 'Lucida Sans Unicode';
+     color: white; 
+     text-align: center;
+}
+
+ .header-title:active {
+     font:bold 12px 'Lucida Sans Unicode';
+     color: white; 
+     text-align: center;
+}
+
+#block-contenting {
+ width: 1000px;
+ height: auto;
+ margin: 0 auto;
+   
+    
+}
+
+#text {
+   font:12px Tahoma;
+   color: #bfbfbf;
+   padding-left: 15px;
+   position: absolute;
+      
+}
+
+#sorting {
+  
+   width: 400px;
+   height: 38px;
+   font:12px Tahoma;
+   color: #bfbfbf;  
+   margin-left: 50%;
+   padding-left: 65px;
+   position: absolute;
+}
+
+
+
+#razrab {
+    font:bolder 12px Tahoma;
+    text-decoration: none;
+    color: #0f0f0f;
+    margin-left: 15%;
+    line-height: 13px;
+    padding-top: 18px;
+}
+
+
+
+
+#block-top-body {
+width: 100%;
+height: auto;
+background-color: white;    
+}
+
+
+
+#block-body1{
+    width: 100%;
+    height: auto;
+ 
+    margin: 0 auto; 
+}
+
+#block-login {
+    width: 100%;
+    height: 400px;
+}
+
+
+#block-head {
+    width: 100%;
+    height: 100px;
+        background:#94dedb;
+    background-size: cover;
+}
+
+#block-top-head {
+   width: 100%;
+   height: 7px;
+   background-color: #9da411;
+}
+
+#head-logo {
+  margin-left: 425px;
+}
+
+#block-log {
+    width: 100%;
+    height: 227px;
+    background: #9068be;
+font:12px Tahoma;
+color: #0f0f0f;
+margin: 0 auto;
+text-align: center;
+
+}
+
+.logform {
+    padding-top: 30px;
+}
+
+
+
+.button-login {
+  width: 300px;
+  height: 40px;
+  background-color: #e62739;
+  font:12px Tahoma;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid #e1e8f0;
+        
+}
+
+
+#remember-me {
+ margin-left: -20px;   
+       
+}
+
+
+
+.style-prise-grid1 {
+   
+      margin-top: -10px;
+      margin-right: 400px;
+    padding-left: 10px;
+    float: right;
+    font: 24px 'Lucida Sans Unicode';
+    }
+
+
+  
+  .skidokbez1{
+       margin-top: -20px;
+      padding-top: 18px;
+    float: right;
+    font: 14px 'Lucida Sans Unicode';
+    text-decoration: line-through; 
+  }
+  
+#tovar-content {
+    width: 1000px;
+    height: 1300px;
+    background: white;
+    margin:0 auto;
+  font: 12px Tahoma;
+  color: #0f0f0f;    
+    
+}
+
+
+
+
+
+
+
+#block-buy {
+    float: left;
+    margin-left: 290px;
+    margin-top: -350px;
+    font: 12px 'Lucida Sans Unicode';
+   color: #0f0f0f;
+       
+    
+}
+
+
+#button-buy {
+   width:200px;
+   height:50px;
+   font: 12px 'Lucida Sans Unicode';
+   color: #aa863a;
+   background-color: transparent;
+   border: 2px solid #aa863a;
+   cursor: pointer;
+    
+}
+
+#button-buy:hover {
+       color:white ;
+        background-color: #aa863a;
+}
+
+
+
+#smth {
+   font: 44px 'Lucida Sans Unicode'; 
+}
+
+
+
+
+
+
+
+#tovar-info1 {
+    font: 12px 'Lucida Sans Unicode';
+    color: #0f0f0f;  
+    margin-left: 20px;
+    width:450px;
+
+}
+
+
+#block-korzyna {
+  width: 100%;
+  height: auto;
+/*  border: 1px solid grey;*/
+  margin: 0 auto;   
+    
+}
+
+#korzyna-header {
+ width: 100%;
+ height: 163px;   
+    
+}
+
+#korzyna-top-head {
+   width: 100%;
+   height: 7px;
+   background-color: #9da411;      
+}
+
+#korzyna-mid-head {
+ height: 163px;
+
+ 
+      
+}
+
+#korzyna-logo {
+    
+}
+
+
+#korzyna-text {
+   margin-left: 170px;
+   font: bold 10px 'Lucida Sans Unicode';
+   color: #0f0f0f; 
+   padding-top: 32px;
+   line-height: 5px;
+}
+
+#korzyna-bot-head {
+ width: 100%;
+ height: 5px;
+ background-color: #9da411;
+ margin-top: -45px;
+}
+
+#korzyna-content {
+width: 800px;
+margin: 0 auto;
+ font: 12px 'Lucida Sans Unicode';
+}
+
+#left-content {
+  width: 350px; 
+  height: auto;
+  margin-left: 20px;
+  margin-top: 30px;
+  font: 12px 'Lucida Sans Unicode';
+  color: #0f0f0f; 
+  line-height: 5px;
+  padding: 10px;
+}
+
+#left-text {
+  font: bold 16px 'Lucida Sans Unicode'; 
+  color: #0f0f0f; 
+  padding-top: 20px;
+}
+
+#right-text {
+   
+
+  font: bold 16px 'Lucida Sans Unicode'; 
+  color: #0f0f0f;
+  
+}
+
+
+.inp {
+ 
+   width: 200px;
+    height: 30px;
+    border: 2px solid #e1e8f0;
+    border-radius: 3px; 
+    
+}
+
+.sel {
+   width: 200px;
+   height: 25px;
+   overflow: hidden;
+   background-image: url('/images/sel.png');  
+}
+
+.sel li {
+   overflow: hidden;  
+   line-height: 30px; 
+}
+
+.inp1 {
+  width: 200px;
+   height: 100px;
+    border: 2px solid #e1e8f0;
+    border-radius: 3px;   
+    
+}
+
+#button-zakaz {
+    width: 160px;
+    height: 31px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font: 12px 'Lucida Sans Unicode';
+    color: #aa863a ;  
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #aa863a ; 
+}
+
+#button-zakaz:hover {
+     background-color:#aa863a;
+     font:12px 'Lucida Sans Unicode';
+     color: white;   
+    
+}
+
+
+
+#right-content {
+  float: right;
+  width: 350px;   
+  height: auto;
+  margin-top: -670px;
+  margin-right: 20px;
+  font: 12px 'Lucida Sans Unicode';
+  color: #0f0f0f; 
+  line-height: 5px;
+  padding: 10px;
+}
+
+
+
+#korzyna-tovar {
+    width: 425px;
+    
+}
+
+#delete  {
+    background-image: url('/images/delete.png');
+    background-color: transparent;
+    width: 12px;
+    height: 14px;
+    overflow: hidden;
+    border: none;
+/*    font: 11px 'Lucida Sans Unicode';
+     color: transparent;*/
+}
+
+
+#delete a {
+     width: 14px;
+    height: 14px;
+    text-align: center;
+    text-decoration: none;
+    font: 22px 'Lucida Sans Unicode';
+    color: transparent;
+    
+}
+
+#kor-img{
+  margin-left: 20px;
+  margin-top: -15px;
+    
+    
+}
+
+
+#opis-tov{
+     font: 12px 'Lucida Sans Unicode';
+width:200px;
+line-height: 20px;
+margin-left: 150px;
+ margin-top: -130px;   
+}
+
+#plus {
+    
+ margin-left: -100px;
+  
+}
+
+.count-input {
+    width: 20px;
+    height: 20px;
+    font: bold 14px 'Lucida Sans Unicode';
+    text-align: center;
+    background: transparent;
+    border: 2px solid white;
+    
+}
+
+.count-plus a {
+    text-decoration: none;
+    font: bold 14px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+    line-height: 5px;
+}
+
+ .count-minus a {
+    text-decoration: none;
+    font: bold 17px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+    line-height: 5px;
+}
+
+.count-plus a:hover {
+    text-decoration: none;
+    font: bold 14px 'Lucida Sans Unicode';
+    color: #729f98;
+    line-height: 5px;
+}
+
+.count-minus a:hover {
+    text-decoration: none;
+    font: bold 17px 'Lucida Sans Unicode';
+    color: #729f98;
+    line-height: 5px;
+}
+
+#cennik {
+    margin-left: 150px;
+    font: 14px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+}
+
+.delete-all {
+ margin-top: 50px; 
+ margin-left: -10px;
+    
+}
+
+.delete-all a {
+    
+    
+    font:14px 'Lucida Sans Unicode';
+    color:  #aa863a;
+    padding: 10px;
+    text-decoration: none;  
+    text-transform: uppercase;
+}
+
+.delete-all a:hover {
+   
+    font: bold 14px 'Lucida Sans Unicode';
+    color:  #aa863a;
+    padding: 10px;
+    text-decoration: none;    
+}
+
+
+
+
+
+#block-tovar-grid {
+    
+    width: 1000px;
+    background: white;
+    margin-top: -10px;
+    margin-left: -55px;
+    
+}
+
+
+#block-tovar-grid  li{
+    background: white;
+padding:5px;
+width: 990px;
+height: auto;
+float: left;
+margin-left: 15px;
+border-bottom:2px solid #bfbfbf;
+  
+}
+
+
+
+.style-title-grid{
+    width: 800px;
+    float: left;
+    margin-bottom: 0;
+    line-height: 5px;
+   
+}
+.style-title-grid a{
+   font:bold 16px Tahoma;
+   color: #e62739;
+   text-align: center;
+   text-decoration: none;
+   
+   
+}
+.style-title-grid a:hover{
+   color: #6ed3cf;
+  }
+
+   .skidok1{
+       background-color: white;
+   float: left;
+   width: 960px;
+   font:bold 16px Tahoma;
+   color: #e62739;
+   text-decoration: none;
+     padding-bottom: 10px;
+     padding-top: 20px;
+     margin-top: 0px;
+     padding-left: 20px;
+      padding-right: 20px;
+  } 
+  
+  #nazva {
+      margin-top: -16px;
+      width: 960px;
+      background-color: white;
+  font:bold 11px Tahoma;   
+  color: #bfbfbf;
+  float: left;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+    
+}
+
+#opis {
+    background-color: white;
+  float: left;
+  width: 960px;
+  font: 14px Tahoma;
+  color: #0f0f0f; 
+ 
+  line-height: 2px;
+  padding-bottom:20px;
+  padding-left: 20px; 
+  padding-right: 20px;
+     
+}
+
+#opis p {
+   font: 14px Tahoma;
+   color: #0f0f0f; 
+   
+    
+}
+
+  
+  .date {
+  font:10px Tahoma; 
+float: right;
+margin-right: 30px;
+  }
+  
+  .podstrok {
+   float:left; 
+   font: 12px Tahoma;
+   color:#bfbfbf;
+   width: 900px;
+  }  
+  
+  .vacancy {
+   float:left; 
+   font: 14px Tahoma;
+   margin-top: -2%;
+   height: 50px;
+  }
+  
+  
+  .skidok{
+    float: left;
+    font: 16px 'Lucida Sans Unicode';
+    padding-bottom: 20px;
+    color: #729f98;
+    margin-top: -25px;
+    padding-left: 10px;
+  }
+  
+  .skidokbez{
+    float: left;
+    font: 10px 'Lucida Sans Unicode';
+    padding-bottom: 20px;
+    text-decoration: line-through; 
+  }
+  
+
+  
+  
+.style-prise-grid {
+    float: left;
+    font: 12px 'Lucida Sans Unicode';
+    padding-bottom: 20px;
+    }
+    
+  
+  .add-cart-style-grid{
+    margin-top: 30px;
+    margin-right:130px;
+    float: right;
+  }
+  
+
+  #button-add {
+    width: 300px;
+    height: 40px;
+    font: 12px Tahoma;
+    color: white;
+    background-color: #e62739;
+    border-radius: 3px;
+    float: left;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    
+    
+}
+
+
+
+
+    #select-sort{
+    
+     font: 12px 'Lucida Sans Unicode';
+     color: #aa863a;
+     cursor:pointer;
+     float: right;
+     margin-top: -38px;
+     margin-right: 140px;
+      background: rgba (240,236,235,0.5);      
+        
+    }
+    
+    #sorting-list{
+      margin-left: 87px;
+      width: 47px;
+      height: auto;  
+      display: none;
+      font: 10px Tahoma;
+      background: white;
+      
+      
+    }
+    
+    
+
+    
+    
+    #sorting li a p{
+     margin-top: 8px;
+     width: 170px;
+     height: 10px;
+     
+
+    }
+    
+    #sorting li ul li a{
+     font: 10px Tahoma;
+     text-decoration: none;
+     line-height: 18px;
+     text-align: left;
+     margin-left: -35px;
+     color:black;
+    }
+    
+     #sorting li ul li a:hover{
+     color: #9068be;   
+     text-decoration: none;
+     line-height: 18px;
+     text-align: left;
+     margin-left: -35px;
+    }
+  
+   
+    
+.category-section
+{
+      width: 200px;
+      height: auto;  
+      background-color: transparent;
+      padding-top: 5px;
+     
+    
+}
+
+.category-section li a{
+      font: 12px 'Lucida Sans Unicode';
+      color:  #0f0f0f;
+      text-decoration: none;  
+      line-height: 20px;
+    
+}
+
+.category-section li a:hover{
+      font: bold 13px 'Lucida Sans Unicode';
+      color:  #c44081;
+      text-decoration: none;  
+    
+}
+
+
+
+        #v2
+        {
+/*           margin-left: 100px;*/
+        }
+   
+        #demo-wrapper
+        {
+            
+           margin-top: 60px;
+            padding: 0;
+            width: 980px;
+        }
+        
+        
+        #kontakting  {
+ height: auto;
+   
+}
+  
+#texting {
+    font: 12px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+    
+    
+}
+
+        
+        #texting1 {
+            color: #9da411;
+            margin-left: 40px;
+            margin-top: -23px;
+        }
+        
+        
+        
+        #tabl table tr{
+            background-color: #f2f2f2;
+        }
+        
+        #tabl table tr td{
+            
+            padding: 10px;  
+        }
+        
+        
+
+        
+        #block-content0 {
+            width: 800px;
+        height: auto; 
+        float: right;
+        margin-top: 100px;
+         margin-right: 40px;
+            
+        }
+        
+#block-header-admin {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto; 
+}
+
+
+
+#login-admin {
+    width: 100%;
+    height:30px;
+    background: #9068be;
+    text-align: center;
+}
+
+#login-admin p {  
+    font: 12px Tahoma;
+    color: white;
+    padding-top: 7px;
+    margin-left: -200px;
+    
+}
+
+
+
+#button-out {
+    float: right;
+    margin-top: -26px;
+    margin-right:45%;  
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font:12px Tahoma;
+    color: #ffffff;   
+    cursor: pointer;
+}
+
+#button-out:hover {
+      border-bottom: 1px solid white;
+}
+
+    
+#admin-logo {
+    margin-left: 450px;
+   margin-top: 20px;
+    
+}
+
+#admin-tovar {
+    padding-top: 5px;
+  width: 980px;
+     font: 14px Tahoma;
+  padding-left: 20px;
+  background: white;
+    height: auto;
+    margin: 7px auto 0 auto;  
+    
+}
+
+#admin-tovar table {
+    margin-top: 7px;
+    
+}
+
+
+
+.tovar {
+    border-radius: 3px; background: #e62739; color:white; font: 12px Tahoma;height: 36px; width: 150px;outline: none; border: none; cursor:pointer;
+}
+
+
+
+
+
+
+
+
+#vkladka {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 30px;
+  
+}
+
+#button-tov {
+    background-color: transparent; 
+    color: #2a2f1b;
+    border: none;
+    float: left;
+    cursor: pointer;
+    font:12px Tahoma;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: white;
+    vertical-align:bottom;
+    float: left;
+    transition: 0.2s;
+
+
+}
+
+
+#button-zak {
+  background-color: transparent; 
+    color: #2a2f1b;
+    border: none;
+    float: left;
+    cursor: pointer;
+    font:12px Tahoma;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: white;
+    vertical-align:bottom;
+    float: left;
+    transition: 0.2s;
+    
+}
+#button-tov:hover, #button-zak:hover {
+      
+      padding: 4px;
+      border:2px solid white;
+      border-radius: 2px;
+      font:bold 12px Tahoma;
+      transition: 0.2s;  
+}
+
+#admin-zakaz{
+    width: 1000px;
+    margin: 0 auto;
+    background: white;
+    margin-top: 7px;
+}
+
+
+#admin-otrasl { 
+    font: 14px Tahoma;
+    color: black;
+    margin: 0 auto;
+    
+}
+
+ #admin-otrasl  table tr{
+            background-color: transparent;
+            
+           
+        }
+        
+        #admin-otrasl  table tr td{
+            
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+    outline: 2px solid #0f0f0f;
+        }
+    
+   #admin-otrasl1 { 
+    font: 14px Tahoma;
+    color: black;
+    margin: 0 auto;
+    
+}
+
+ #admin-otrasl1  table tr{
+            background-color: transparent;
+            
+           
+        }
+        
+        #admin-otrasl1  table tr td{
+            
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+    outline: 2px solid #0f0f0f;
+        }
+     
+   #admin-otrasl2 { 
+    font: 14px Tahoma;
+    color: black;
+    margin: 0 auto;
+    
+}
+
+ #admin-otrasl2  table tr{
+            background-color: transparent;
+            
+           
+        }
+        
+        #admin-otrasl2  table tr td{
+            
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+    outline: 2px solid #0f0f0f;
+        }
+
+#tablica {
+    font: 14px Tahoma;
+    color: black;
+    margin: 0 auto;
+    
+}
+
+ #tablica table tr{
+            background-color: transparent;
+            
+           
+        }
+        
+        #tablica table tr td{
+            
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+    outline: 2px solid #0f0f0f;
+        }
+        
+        #delete {
+            background-image: url('/images/delete.png');
+            background-color: transparent;
+            width: 12px;
+            height: 12px;
+            overflow: hidden;
+            margin-top: 5px;
+            border: none;
+        }
+        
+        #but-edit {
+            background-image: url('/images/edit.png');
+            background-color: transparent;
+            width: 12px;
+            height: 12px;
+            overflow: hidden;
+            border: none;
+        }
+
+  
+        
+        #lol1 {
+/*   margin-top: 50px;*/
+    font: bold 12px 'Lucida Sans Unicode';
+}
+
+
+#redaktir {
+    margin-top: 20px;
+    width: 350px;
+    font: 14px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+    
+}
+
+
+.forzak {
+   width: 271px;
+   height: 100px;  
+   background-color: #f2f2f2;
+   border: 1px solid #dadada;
+  
+}
+
+.sel1 {
+   width: 231px;
+   height: 36px;
+   overflow: hidden;
+   background-image: url('/images/window.png');  
+}
+
+.sel1 li {
+   overflow: hidden;  
+   line-height: 40px; 
+}
+
+#vkorzyne {
+   margin-top: -305px;
+   margin-left: 400px;
+    width: 600px;
+    font: 14px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+
+  
+    
+}
+
+.naming {
+    font: bold 14px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+    
+    
+}
+
+
+
+#buttel {
+    background-image: url('/images/delete.png');
+    background-color: transparent;
+    width: 12px;
+    height: 14px;
+    overflow: hidden;
+     border: none;
+     float: left;
+     cursor: pointer;
+   
+}
+
+
+.cen {
+    margin-left: 100px;
+    font: bold 14px 'Lucida Sans Unicode';
+    color: #0f0f0f;
+    
+}
+
+#butsave {
+   margin-top: 40px;
+   width:160px;
+   height:45px;
+   font: bold 14px 'Lucida Sans Unicode';
+   color: white;
+   background-color: #c44081;
+   border: none;
+    
+}
+
+#butsave:hover {
+   width:170px;
+   height:55px;
+   font: bold 15px 'Lucida Sans Unicode';
+   color: #c44081;
+   background-color: transparent;
+   border: 2px solid #c44081;
+    
+}
+
+#butsave:active {
+   width:170px;
+   height:55px;
+   font: bold 15px 'Lucida Sans Unicode';
+   color: white;
+   background-color: #890e4b;
+   border: 2px solid #c44081;
+    
+}
+
+#block-basket p a {
+    font: bold 11px 'Lucida Sans Unicode';
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    
+}
+
+#divo {
+    font: 12px Tahoma;
+    width: 400px;
+    height: auto;
+    background: #9068be;
+    border-radius: 3px;
+    height: 150px;
+    margin-top: 200px;
+    margin-left: 550px;
+    
+}
+
+#divo p {
+  font: bold 12px Tahoma;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   padding-top: 30px;
+}
+
+#divo p a {
+    font: bold 16px Tahoma;
+    color: #6ed3cf;
+    border-bottom: 1px solid #6ed3cf;   
+}
+
+
+
+
+#block-content1 {
+   width: 900px;
+   height: auto;
+   margin-top: 50px;
+} 
+
+  #img-png {
+      background-image: url('/images/2.png');
+      width: 277px;
+      height: 262px;
+            margin-left: 620px;
+            position: absolute;
+            margin-top: 55px;
+            
+        }
+        
+        #img-png:hover {
+            background-image: url('/images/3.png');
+          width: 300px;
+           height: 334px;
+          margin-left: 640px;
+            
+        }
+        
+       
+        
+        
+
+#akci-img {
+     margin-top: 20px; 
+     margin-left: 35px; 
+     background-image: url('/images/1.png');
+     height: 400px;
+    
+}
+
+        #akci {
+            height: auto;
+         
+        }
+        
+      
+        
+        #akci-text {
+         text-align: center;
+         font: bold 16px 'Lucida Sans Unicode';
+         color:  #0f0f0f;
+        }
+        
+        #polosa {
+            margin-left: 95px;
+            width: 550px;
+            height: 40px;
+            background-color: #eeeeee;
+            opacity: 0.8;
+            margin-top: -70px;
+            
+        }
+        
+        #other {
+            font: bold 14px 'Lucida Sans Unicode';
+            color: #0f0f0f;
+            margin-top: 40px;
+            margin-left: 40px;
+            text-align: center;
+        }
+        
+#right-content1 {
+  float: left;
+  margin-left: 500px;
+  margin-top: -630px;
+  width: 455px;   
+  height: auto;
+  font: 14px 'Lucida Sans Unicode';
+  color: #0f0f0f; 
+  line-height: 5px;
+  padding: 10px;
+}
+
+#block-body1 a {
+    color: #9da411;
+    font: bold 14px 'Lucida Sans Unicode';
+    text-decoration: none;
+  
+}
+
+#block-body1 a:hover {
+    color: #c44081;
+    font: bold 15px 'Lucida Sans Unicode';
+    text-decoration: none;
+  
+}
+
+#block-body1 a:active {
+    color: #9da411;
+    font: bold 15px 'Lucida Sans Unicode';
+    text-decoration: none;
+  
+}
+
+#but-edit a {
+     width: 14px;
+    height: 14px;
+    text-align: center;
+    text-decoration: none;
+    font: 22px 'Lucida Sans Unicode';
+    color: transparent;
+    
+}
+
+
+
+#but-new {
+    margin-left: 200px;
+   margin-top: 20px;
+   width:160px;
+   height:20px;
+   background-color:transparent;
+   border: 2px solid #aa863a;
+   cursor: pointer;
+    
+}
+
+#but-new:hover {
+   background-color:#aa863a;
+    
+}
+
+
+
+#but-new a {
+    padding-left: 35px;
+    font: 12px 'Lucida Sans Unicode';
+    text-decoration: none;
+       color: #aa863a;
+}
+
+#but-new a:hover {
+color: white;   
+    
+}
+
+
+#admin-new {
+  font: 14px 'Lucida Sans Unicode';
+  color: #0f0f0f;     
+    
+}
+
+
+#button-tovar  {
+}
+
+
+#lefty {
+  margin-left: 20px;
+  font: 14px Tahoma; 
+  color: #0f0f0f; 
+  padding-top: 20px;
+}
+
+#righty {
+   
+  margin-left: 530px;
+  margin-top: -1285px;
+  font: 14px 'Lucida Sans Unicode'; 
+  color: #0f0f0f;
+  
+}
+
+#righty1 {
+   
+  margin-left: 530px;
+  margin-top: -1105px;
+  font: 14px 'Lucida Sans Unicode'; 
+  color: #0f0f0f;
+  
+}
+
+#righty1 select {
+    width: 160px;
+    
+}
+
+.sele {
+    width:300px;
+    height: 30px;
+    border: 2px solid #e1e8f0;
+    border-radius: 3px;
+}
