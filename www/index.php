@@ -81,7 +81,7 @@ else
         
 </head>
 
-<body style="background-color: #e1e8f0; margin:-10px;">
+<body>
 
 <div id="block-body">
 
@@ -91,17 +91,17 @@ else
 ?>
 
  <div id="all"> 
-    <form name="form" action="" method="post" style="padding-top: 2%;" >
+    <form name="form" action="" method="post" class="search-form" >
+        <div class="search-form-inputs">
         
  <?php
 
 echo 
 '
-Страна:
 
-<select style="width:90px;"  name="country" size=1>
-<option  value="'.$country_name.'">'.$country_name.'</option>
-<option  value=""></option>
+<div class="select-container">
+<select class="search-item"  name="country" size=1>
+<option  value="Страна">Страна</option>
 ';
 $country=  mysqli_query($link,"SELECT * FROM Country order by country_name"); 
 if (mysqli_num_rows($country)>0)
@@ -109,7 +109,7 @@ if (mysqli_num_rows($country)>0)
     do
         {
                  echo '
-          <option style="width:90px; value="'.$row2["country_name"].' ">'.$row2["country_name"].'</option>
+          <option value="'.$row2["country_name"].' ">'.$row2["country_name"].'</option>
 ';
         }
     while($row2=  mysqli_fetch_array($country));
@@ -117,11 +117,11 @@ if (mysqli_num_rows($country)>0)
 
 echo'
     </select>
-Категория:
+    </div>
 
-<select style="width:90px;"  name="category" size=1 />
-<option  value="'.$category_name.'">'.$category_name.'</option>
-<option  value=""></option>
+<div class="select-container">
+<select class="search-item"  name="category" size=1 />
+<option  value="Категория">Категория</option>
 
 ';
 $category=  mysqli_query($link,"SELECT * FROM category order by category"); 
@@ -130,7 +130,7 @@ if (mysqli_num_rows($category)>0)
     do
         {
                  echo '
-          <option style="width:90px; value="'.$row2["category"].' ">'.$row2["category"].'</option>
+          <option style="value="'.$row2["category"].' ">'.$row2["category"].'</option>
 ';
         }
     while($row2=  mysqli_fetch_array($category));
@@ -138,15 +138,14 @@ if (mysqli_num_rows($category)>0)
 
 echo'
     </select>
-<a>Год</a>
-<input class="tovar" type="text" name="year" id="year" value="'.$year_value.'" style="background: white; color: black; cursor: text;border: 3px solid #e1e8f0; border-radius: 3px;">
+</div>
+<div class="input-container">
+<input placeholder="Год" class="search-item"  type="text" name="year" id="year" >
 
-     </select>
-Перфорация:
-
-<select style="width:90px;" name="perforation" size=1 />
-<option  value="'.$perforation_name.'">'.$perforation_name.'</option>
-<option  value=""></option>
+</div>
+<div class="select-container">
+<select class="search-item"  name="perforation" size=1 />
+<option  value="Перфорация">Перфорация</option>
 
 ';
 $perforation=  mysqli_query($link,"SELECT * FROM perforation order by perforation"); 
@@ -155,7 +154,7 @@ if (mysqli_num_rows($perforation)>0)
     do
         {
                  echo '
-          <option style="width:90px; value="'.$row2["perforation"].' ">'.$row2["perforation"].'</option>
+          <option style=" value="'.$row2["perforation"].' ">'.$row2["perforation"].'</option>
 ';
         }
     while($row2=  mysqli_fetch_array($perforation));
@@ -163,7 +162,11 @@ if (mysqli_num_rows($perforation)>0)
 
 echo'
     </select>  
+    </div>
+    </div>
+    <div class="search-form-buttons">
     <input class="tovar" type="submit" name="button-sel" id="button-sel" value="Искать" >
+    </div>
 ';
 ?>
     </form>    
@@ -171,6 +174,7 @@ echo'
     
 
 <div id="block-contenting">
+    <div class="block-sorting">
  <?php
 
  if($where1=='')
@@ -201,20 +205,17 @@ $kol= $rowcount['coun'];
     </div>';
 ?>    
 <div id="sorting">
-<p>Сортировка:</p>
-<li><a id="select-sort"><p style="color:#9068be; font: 10px Tahoma; margin-top: 12px;"><?php echo $sort_name;?></p></a>  
+    <a id="select-sort">
+    Сортировка:
+        <?php echo $sort_name;?>
+    </a>  
            <ul id="sorting-list">
            <li><a href="index.php?sort=cena-desc">дорогие</a></li> 
            <li><a href="index.php?sort=datapost">новые</a></li> 
            <li><a href="index.php?sort=naim-desc">по названию</a></li>         
-           </ul>
-       </li> 
-
-        
-       
- </div>       
+           </ul> 
 </div> 
-     
+     </div>
  <script type="text/javascript">
 function func()
 {
@@ -225,13 +226,6 @@ var sor = document.getElementById('select-sort');
 
 sor.onclick = function(){ func(); };
 </script>   
-
-
-
-<br>
- <br>
-
- 
  
 <ul id="block-tovar-grid">
 <?php
