@@ -12,10 +12,11 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src='js/jquery-1.11.3.min.js'></script>
+    <script type="text/javascript" src='js/tabs.js'></script>
 	<title>Справочник филателиста</title>
 </head>
 
-<body style="background-color: #e1e8f0; margin:-10px;">
+<body>
 
 <div id="block-body">
 

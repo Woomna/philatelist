@@ -10,7 +10,7 @@
 	<title>Справочник филателиста<</title>
 </head>
 
-<body style="background-color: #e1e8f0; margin:-10px;">
+<body >
 
 <div id="block-body">
 
@@ -25,7 +25,6 @@
 
 <?php
   include("include/block-footer.php");
-
 ?>
 
 </div>

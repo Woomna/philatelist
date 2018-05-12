@@ -1,31 +1,18 @@
-<div id="block-header-admin">
-    <div id="block-head"> 
+<div id="block-header">
 
-
-
-
-
-    <a href="adminpanel-sprav.php"><input type="submit" id="button-tov" value="Справочники" style="margin-top: 40px;margin-left: 35%;"></a>
-
-    <div id="head-logo">
-        <a href="index.php"><img id="img-logo" src="/images/lo.png"/></a>
+    <div id="header-menu-block">
+        <div class="header-logo-menu">
+            <a href="index.php">  <div id="img-log"></div></a>
+            <div class="header-menu-list">
+                <a href="adminpanel-sprav.php" class="menu-item"><input type="submit" value="Справочники"></a> 
+                <a href="adminpanel.php" class="menu-item"><input type="submit" value="Справочник марок"></a> 
+                <a href="../viiti.php" class="menu-item"><input type="submit" value="Выход"/></a>
+            </div>
         </div>
-    
-          <a href="adminpanel.php"><input type="submit" id="button-zak" value="Справочник марок" style="margin-top: -45px;margin-left: 51.5%;"></a>
-  
+        <form name="form-search" action="index.php" method="post" >
+            <input  type="text" name="search" id="search" value="" placeholder="поиск марок" />
+            <input  type="submit" name="button-search" id="button-search" value=" " />
+        </form>
 
-      <div id="login-admin"> 
-<p>  Добро пожаловать, Admin! </p>
-<a href="../viiti.php"><input type="submit" id="button-out" value="Выйти"/></a>
-  </div> 
-
-
-</div>
-    
-    
-    
-    
-    
-    
-
+    </div>  
 </div>

@@ -18,8 +18,24 @@
 
 </head>
 
-<body style="background-color: #e1e8f0; margin:-10px;">
-    <div id="block-body1">
+<body >
+    <div id="block-header">
+    <div id="header-menu-block">
+        <div class="header-logo-menu">
+            <a href="index.php">  <div id="img-log"></div></a>
+            <div class="header-menu-list">
+                <a href="index.php" class="menu-item">Главная</a> 
+                <a href="index.php?cat=1" class="menu-item">Раритеты</a> 
+            </div>
+        </div>
+        <form name="form-search" action="index.php" method="post" >
+            <input  type="text" name="search" id="search" value="" placeholder="поиск марок" />
+            <input  type="submit" name="button-search" id="button-search" value=" " />
+        </form>
+
+    </div>
+        </div>
+    <div id="all">
 <?php
 
     if (empty($_SESSION['login']) or empty($_SESSION['id']))
@@ -44,14 +60,15 @@ $name = $row["username"];
         mysqli_close($link);
 
     echo "
-<div align='center'style='border: 2px solid #e5e5e5; position:relative; top:100px; left:350px; height:150px; width:300px;'>
-        <br><br>
-	<font size='3' face='tahoma' color='484848'>
-        Здравствуйте: <font size='3' face='tahoma' color='9da411'><b>"."".$name."</b></font>
-	<br/>
-	Вы можете перейти по ссылке: <a href='adminpanel-sprav.php'><br>-АДМИН.ПАНЕЛЬ-</a>
-	<br/>
-      <a href='viiti.php'>-ВЫЙТИ-</a> </font>
+<div class='alert-text'>
+
+        Здравствуйте: <b>".$name."</b></font>
+            <div class='buttons'>
+      <a href='viiti.php' class='black-href'> << ВЫЙТИ </a> 
+      <a href='adminpanel-sprav.php' class='back-href'>АДМИН.ПАНЕЛЬ >> </a>
+      </div>
+
+      
    <br/>
 
 </div>";

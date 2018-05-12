@@ -89,7 +89,16 @@ else
 
   include("include/block-header.php");
 ?>
+<div id="header-middle-block">
+        <div id="naz">
+            <a href="index.php" class="href">
+                <div class="logo"></div>
+            </a>
+            <div class="text">самый полный справочник филателиста</div>
+        </div>
 
+
+    </div>
  <div id="all"> 
     <form name="form" action="" method="post" class="search-form" >
         <div class="search-form-inputs">
@@ -228,6 +237,7 @@ sor.onclick = function(){ func(); };
 </script>   
  
 <ul id="block-tovar-grid">
+    
 <?php
 
 $result=  mysqli_query($link,"SELECT
@@ -276,18 +286,17 @@ if (mysqli_num_rows($result)>0)
         echo '
         
         <li>
+        <div class="style-title-grid">
+            <a href="annunciation.php?idt='.$row["id_stamp"].'">'.$row["stamp_name"].' </a>
+            </div>
         <div class="block-images-grid">
         <img src="'.$img_path.'" width="'.$width.'" height="'.$height.'"/>
         </div>
-        
-        <li>
-        <ul class="prewiews-and-counts-grid">
-      
-<p class="style-title-grid"><a href="annunciation.php?idt='.$row["id_stamp"].'">'.$row["stamp_name"].' </a></p>
-<p class="vacancy"><br>'.$test.'</p>
-</ul>
 
-</li>
+        <div class="prewiews-and-counts-grid">
+            <div class="vacancy">'.$test.'</div>
+        </div>
+        </li>
        
 
 ';

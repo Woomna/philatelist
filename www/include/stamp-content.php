@@ -1,6 +1,5 @@
 <div id="tovar-content">
-<form name="form" action="" method="post" style="width: 900px;" >
-    
+<form name="form" action="" method="post">
     <?php
 include("include/db-connect.php");
 include("functions/functions.php");
@@ -46,26 +45,32 @@ if (mysqli_num_rows($result)>0)
           $height=500;
        }
    echo ' 
-       <div id="all" style="
-   margin: 0 auto;
-    width: 1000px;
-    height: auto;
-   background-color: white; 
-}">
-    <p class="skidok1"> '.$row["stamp_name"].' ,страна '.$row["country_name"].' , '.$row["raritet"].' Примерная стоимость '.$row["cost"].' $. </p>
-      
-     <div id="nazva">'.$row["stamp_year"].'г.в., в мире примерно '.$row["counts_in_world"].' шт., перфорация '.$row["perforation"].'</div>
-<div id="opis">
-<a><img src="'.$img_path.'" width="'.$width.'" height="'.$height.'"></a>;  
-';
- if($row["stamp_history"]!="") echo'<p> История марки: '.$row["stamp_history"].';</p>';
-
- echo
- '
-</div> </div> 
-       
-
-';
+    <div id="all">
+    <div class="stamp">
+        <div class="stamp-image">
+            <a><img src="'.$img_path.'" width="'.$width.'" height="'.$height.'"></a>;
+        </div>
+        <div class="stamp-info">
+            <div class="stamp-name">'.$row["stamp_name"].'</div>
+            <div class="stamp-price">'.$row["cost"].' $. </div>
+            <div class="stamp-main-info">
+                <div><span class="stamp-text-title"> Страна: </span> '.$row["country_name"].'</div>
+                <div><span class="stamp-text-title">  Год: </span>  '.$row["stamp_year"].'</div>
+                <div><span class="stamp-text-title">  Кол-во:  </span> '.$row["counts_in_world"].'</div>
+                <div><span class="stamp-text-title">  Перфорация: </span>  '.$row["perforation"].'</div>
+                <div><span class="stamp-text-title">  Раритет:  </span> '.$row["raritet"].'</div>
+            </div>
+            <div class="stamp-descr">
+                ';
+                if($row["stamp_history"]!="") {
+                    echo '<div class="stamp-story"> '.$row["stamp_history"].';</div>';
+                }
+                echo
+                '
+            </div>
+        </div>
+        </div>
+    </div> ';
 };
 
 ?> 

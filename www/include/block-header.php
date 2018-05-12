@@ -15,22 +15,4 @@
         </form>
 
     </div>  
-
-    <div id="header-middle-block">
-        <div id="naz">
-            <a href="index.php" class="href">
-                <div class="logo"></div>
-            </a>
-            <div class="text">самый полный справочник филателиста</div>
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-
 </div>
