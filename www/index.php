@@ -112,7 +112,7 @@ echo
 <select class="search-item"  name="country" size=1>
 <option  value="Страна">Страна</option>
 ';
-$country=  mysqli_query($link,"SELECT * FROM Country order by country_name"); 
+$country=  mysqli_query($link,"SELECT * FROM country order by country_name"); 
 if (mysqli_num_rows($country)>0)
 {    $row2=  mysqli_fetch_array($country);
     do
@@ -226,14 +226,11 @@ $kol= $rowcount['coun'];
 </div> 
      </div>
  <script type="text/javascript">
-function func()
-{
-$("#sorting-list").slideToggle(200);
-       
-}
-var sor = document.getElementById('select-sort');
+$(document).on('click', '#select-sort', function(){
+    $(this).closest('#sorting').toggleClass('opened');
+    $(this).siblings('#sorting-list').toggleClass('visible');
+})
 
-sor.onclick = function(){ func(); };
 </script>   
  
 <ul id="block-tovar-grid">
@@ -246,6 +243,7 @@ $result=  mysqli_query($link,"SELECT
   category.category,
   stamp.stamp_name,
   stamp.stamp_year,
+  stamp.cost,
   stamp.stamp_picture,
   stamp.id_stamp
     FROM stamp
@@ -288,7 +286,16 @@ if (mysqli_num_rows($result)>0)
         <li>
         <div class="style-title-grid">
             <a href="annunciation.php?idt='.$row["id_stamp"].'">'.$row["stamp_name"].' </a>
+            <div class="stamp-about">
+                <div class="stamp-about-info">
+                <p><span class="stamp-about-title">Страна:</span>'.$row["country_name"].'</p>
+                <p><span class="stamp-about-title">Категория:</span>'.$row["category"].'</p>
+                <p><span class="stamp-about-title">Год:</span>'.$row["stamp_year"].'</p>
+                <p><span class="stamp-about-title">Перфорация:</span>'.$row["perforation"].'</p>
+                </div>
+                <div class="stamp-about-price">'.$row["cost"].'</div>
             </div>
+        </div>
         <div class="block-images-grid">
         <img src="'.$img_path.'" width="'.$width.'" height="'.$height.'"/>
         </div>

@@ -55,6 +55,7 @@ if (mysqli_num_rows($result)>0)
             <div class="stamp-price">'.$row["cost"].' $. </div>
             <div class="stamp-main-info">
                 <div><span class="stamp-text-title"> Страна: </span> '.$row["country_name"].'</div>
+                <div><span class="stamp-text-title"> Категория: </span> '.$row["category"].'</div>    
                 <div><span class="stamp-text-title">  Год: </span>  '.$row["stamp_year"].'</div>
                 <div><span class="stamp-text-title">  Кол-во:  </span> '.$row["counts_in_world"].'</div>
                 <div><span class="stamp-text-title">  Перфорация: </span>  '.$row["perforation"].'</div>

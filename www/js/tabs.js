@@ -13,5 +13,5 @@ $(document).ready(function(){
    $(document).on('click', '.create-item', function(){
        $(this).toggleClass('opened');
        $(this).siblings('.create-form').toggleClass('visible');
-   })
+   });
 });
