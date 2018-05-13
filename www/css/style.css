@@ -630,6 +630,7 @@ li {
     bottom: -5px;
     right : 30px;
     box-sizing: border-box;
+    z-index: 3;
 }
 #sorting-list{
     background-color: white;
@@ -652,23 +653,22 @@ li {
     transition: opacity 0.2s linear;
     border: 1px solid #247694;
     border-radius: 0 0 5px 5px;
-}
-#sorting:hover #sorting-list{
+    z-index: 2;
     display: block;
+    transition: visibility 0.1s linear 0.1s, opacity 0.3s linear;
 }
 #sorting-list.visible{
+    visibility: visible;
     opacity: 1;
 }
 #sorting-list li{
     padding: 5px;
     border-bottom: 1px solid transparent;
     text-align: center;
-    opacity: 0.6; 
     cursor: pointer;
 }
 #sorting-list li:hover{
     border-bottom-color: #277c9d;
-    opacity: 1;
 }
 
 
@@ -1294,7 +1294,10 @@ li {
     font-size: 15px;
     text-transform: uppercase;
 }
-
+.edit-image img{
+    max-height: 100%;
+    max-width: 100%;
+}
 
 .skidok1{
     background-color: white;
@@ -2162,8 +2165,8 @@ li {
     position: absolute;
     content: 'Загрузить фото';
     display: block;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
     width: 175px;
     height: 28px;
     box-sizing: border-box;
@@ -2174,6 +2177,7 @@ li {
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
+    background-color: white;
 }
 .edit-info div{
     display: flex;
