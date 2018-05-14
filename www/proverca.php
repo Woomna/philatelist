@@ -1,3 +1,14 @@
+<?php
+
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
+ 
+?>
+
+<!DOCTYPE HTML>
+
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
@@ -10,10 +21,7 @@
 <?php
 
 setlocale(LC_ALL,'ru_RU.65001','rus_RUS.65001','Russian_Russia.65001','russian');
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
+
 if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } 
     if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
 if (empty($login) or empty($password)) 

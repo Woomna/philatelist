@@ -164,6 +164,7 @@ ul{
     font-weight: 600;
     padding: 7px;
     width: 200px;
+    cursor: pointer;
 }
 
 #block-content {
@@ -287,9 +288,6 @@ ul{
 .create-catalog-item .create-item:hover{
     color: #277c9d;
 }
-.create-item:hover ~.create-form{
-    display: block;
-}
 .create-catalog-item .create-item.opened::before{
     position: absolute;
     content: '';
@@ -309,7 +307,6 @@ ul{
     border: 1px solid #247694;
     border-top-style: none;
     border-radius: 0 0 5px 5px;
-    display: none;
     opacity: 0;
     transition: opacity 0.2s linear;
     box-sizing: border-box;
@@ -531,7 +528,6 @@ ul{
     border-style: none;
     background-color: white;
     border-bottom: 1px solid #247694;
-    text-transform: uppercase;
     cursor: pointer;
 }
 .input-item{
@@ -2150,6 +2146,11 @@ li {
     align-items: flex-end;
     margin-right: 50px;
     position: relative;
+    width: 400px;
+    height: 350px;
+}
+.view-image{
+    margin-right: 50px;
     width: 400px;
     height: 350px;
 }

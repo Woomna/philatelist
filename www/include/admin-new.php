@@ -4,23 +4,33 @@ include("actions/upload_image.php");
 
 if (isset($_POST["button-tovar"])) {
     $cena = $_POST['cena'];
-    $country = $_POST['country'];
+    $country = $_POST['country']; echo 'country='; echo $country; echo $_POST['country']; 
     $naim = $_POST['naim'];
     $counts = $_POST['counts'];
-    $category = $_POST['category'];
-    $perforation = $_POST['perforation'];
+    $category = $_POST['category']; echo '$category=';echo $category;
+    $perforation = $_POST['perforation'];echo '$perforation=';echo $perforation;
     $opis = $_POST['haract'];
     $year = $_POST['year'];
     $raritet = ($_POST['raritet'] === true ? 1 : 0);
-    if ($_POST['upload_image']) {
+    if ($_POST['upload_image']) 
+        {
         $name = $_POST['upload_image'];
         $image = '/img/' . $name;
-    } else
-        $image = '';
+        echo $image;
+        } 
+    else        
+        { $image = ''; echo '33';
+        }
     $dob = mysqli_query($link, "INSERT INTO Stamp (stamp_name, stamp_year, stamp_picture, stamp_history, 
-    cost, raritet,  counts_in_world, ID_country, id_category, ID_perforation)
+    cost, raritet,  counts_in_world, id_country, id_category, id_perforation)
                 VALUES ('{$naim}', '$year', '{$image}', '{$opis}', "
             . "'$cena', '$raritet', '$counts', '$country', '$category', '$perforation')");
+    if ($dob=='TRUE') {
+    echo '<script>window.location.href = "adminpanel.php";</script>';
+    }
+    else 
+    {echo 'Error!';
+    }
 }
 ?>
 
@@ -37,6 +47,7 @@ if (isset($_POST["button-tovar"])) {
             <form name="form" action="" method="post" style="padding-top: 2%;" >
 
                 <?php
+                echo $name;
                 echo
                 '
     <div class="edit-main-info">
@@ -44,7 +55,7 @@ if (isset($_POST["button-tovar"])) {
                 <div id="baseimg-upload">
 <input type="file" name="upload_image"/>
 </div>
-            </div>
+</div>
             <div class="edit-info">
                     
                 <div><span>Название:</span><input type="text" id="naim" name="naim" placeholder="" class="inp" value=""></div>
@@ -62,11 +73,10 @@ if (isset($_POST["button-tovar"])) {
                     $row2 = mysqli_fetch_array($country);
                     do {
                         echo '
-          <option selected=true value="' . $row2["id_country"] . '">' . $row2["country_name"] . '</option>
+          <option selected=true value="' . $row2["ID_country"] . '">' . $row2["country_name"] . '</option>
 ';
                     } while ($row2 = mysqli_fetch_array($country));
                 };
-
                 echo'
     </select>
     </div>

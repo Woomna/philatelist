@@ -24,7 +24,7 @@ switch($sorting)
 }
  if (!empty($_POST["button-sel"])) 
    {$where="";
-    if (isset($_POST["country"])&&$_POST["country"]!='') $where1 = addWhere($where1, $where, " country.country_name  like ('%".$_POST["country"]."%')");
+    if (isset($_POST["country"])&&$_POST["country"]!='') $where1 = addWhere($where1, $where, " country.country_name  IN ('".$_POST["country"]."')");
     if (isset($_POST["year"])&&$_POST["year"]!='') $where1 = addWhere($where1,$where, " stamp.stamp_year =".$_POST["year"].""); 
     if (isset($_POST["category"])&&$_POST["category"]!='') $where1 = addWhere($where1,$where, " category.category IN ('".$_POST["category"]."')");
     if (isset($_POST["perforation"])&&$_POST["perforation"]!='') $where1 = addWhere($where1,$where, " perforation.perforation IN ('".$_POST["perforation"]."')");
@@ -110,7 +110,7 @@ echo
 
 <div class="select-container">
 <select class="search-item"  name="country" size=1>
-<option  value="Страна">Страна</option>
+<option  value="">СТРАНА</option>
 ';
 $country=  mysqli_query($link,"SELECT * FROM country order by country_name"); 
 if (mysqli_num_rows($country)>0)
@@ -130,7 +130,7 @@ echo'
 
 <div class="select-container">
 <select class="search-item"  name="category" size=1 />
-<option  value="Категория">Категория</option>
+<option  value="">КАТЕГОРИЯ</option>
 
 ';
 $category=  mysqli_query($link,"SELECT * FROM category order by category"); 
@@ -154,7 +154,7 @@ echo'
 </div>
 <div class="select-container">
 <select class="search-item"  name="perforation" size=1 />
-<option  value="Перфорация">Перфорация</option>
+<option  value="">ПЕРФОРАЦИЯ</option>
 
 ';
 $perforation=  mysqli_query($link,"SELECT * FROM perforation order by perforation"); 

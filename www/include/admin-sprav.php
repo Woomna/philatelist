@@ -4,10 +4,10 @@ $id_ud = isset($_GET['id_ud']) ? clear_string($link, $_GET["id_ud"]) : '';
 $action = isset($_GET['action']) ? clear_string($link, $_GET["action"]) : '';
 switch ($action) {
     case 'deleteperf':
-        mysqli_query($link, "delete from perforation where ID_perforation='$id_ud'");
+        mysqli_query($link, "delete from perforation where id_perforation='$id_ud'");
         break;
     case 'deletecount':
-        mysqli_query($link, "delete from country where ID_country='$id_ud'");
+        mysqli_query($link, "delete from country where id_country='$id_ud'");
         break;
     case 'deletecateg':
         mysqli_query($link, "delete from category where id_category='$id_ud'");

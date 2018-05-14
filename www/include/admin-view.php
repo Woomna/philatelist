@@ -15,13 +15,19 @@ if (isset($_POST["button-tovar"])) {
     } else {
         $raritet = 0;
     }
-    if ($_POST['upload_image']) {
+  /*  if ($_POST['upload_image']) {
         $name = $_POST['upload_image'];
         $image = '/img/' . $name;
     } else
-        $image = $_POST['old_image'];
-    $dob = mysqli_query($link, "UPDATE Stamp set stamp_name ='{$naim}', stamp_year='$year', stamp_picture='{$image}',
+        $image = $_POST['old_image'];*/
+    $dob = mysqli_query($link, "UPDATE Stamp set stamp_name ='{$naim}', stamp_year='$year', 
     stamp_history='{$opis}', cost='$cena', raritet='$raritet',  counts_in_world='$counts' where id_stamp=$idt");
+    if ($dob=='TRUE') {
+    echo '<script>window.location.href = "adminpanel.php";</script>';
+    }
+    else 
+    {echo 'Error!';
+    }
 }
 ?>
 <div id="block-tovar" > 
@@ -51,8 +57,10 @@ if (isset($_POST["button-tovar"])) {
         INNER JOIN category ON category.id_category = stamp.id_category
         INNER JOIN perforation ON perforation.id_perforation = stamp.id_perforation
 WHERE id_stamp=$idt");
+            
             if (mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_array($result);
+                $old_image=$row["stamp_picture"];
                 if ($row["stamp_picture"] != "" && file_exists("./" . $row["stamp_picture"])) {
                     $img_path = $row["stamp_picture"];
                     $width = 200;
@@ -80,9 +88,8 @@ WHERE id_stamp=$idt");
 
                 echo ' 
         <div class="edit-main-info">
-            <div class="edit-image">
+            <div class="view-image">
                 <img src="' . $img_path . '" width="' . $width . '" height="' . $height . '">
-                <input type="file" class="download-image" name="upload_image"/>
             </div>
             <div class="edit-info">
                     
